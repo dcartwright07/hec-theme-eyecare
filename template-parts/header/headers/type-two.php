@@ -1,60 +1,75 @@
 <!-- Header Starts -->
 <div class="header header-new header-type-two">
     <div class="row">
-        
+
         <div class="large-4 medium-12 small-12 columns">
-            <div class="logo">
-                <?php if(!has_custom_logo()) { ?> 
-                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <?php } else { 
-                    //Load custom logo
-                    //If set 
-                    the_custom_logo();
-		?>
-		    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		<?php } ?>    
-            </div><!-- logo /-->
+					<div class="logo">
+
+						<?php if( !has_custom_logo() ) : ?>
+
+							<!-- Print Site Title -->
+							<h1 class="site-title">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+									<?php bloginfo( 'name' ); ?>
+								</a>
+							</h1>
+
+						<?php else : ?>
+
+							<!-- Print custom logo and site title -->
+							<h1 class="site-title">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+									<?php
+										the_custom_logo();
+										bloginfo( 'name' );
+									?>
+								</a>
+							</h1>
+
+						<?php endif; ?>
+
+					</div><!-- logo /-->
         </div><!-- left Ends /-->
-        
+
         <div class="large-8 medium-12 small-12 columns">
         <?php
 			$wc_box_one_icon 	= get_theme_mod("wc_header_type_icon_class_one");
 			$wc_box_one_title 	= get_theme_mod("wc_header_type_title_one");
 			$wc_box_one_detail 	= get_theme_mod("wc_header_type_detail_one");
-			
+
 			$wc_box_two_icon 	= get_theme_mod("wc_header_type_icon_class_two");
 			$wc_box_two_title 	= get_theme_mod("wc_header_type_title_two");
 			$wc_box_two_detail 	= get_theme_mod("wc_header_type_detail_two");
-			
-			
+
+
 			//Setting Default values first box
-			if(empty($wc_box_one_icon)) { 
+			if(empty($wc_box_one_icon)) {
 				$wc_box_one_icon = "fa-map-marker";
 			}
-			
-			if(empty($wc_box_one_title)) { 
+
+			if(empty($wc_box_one_title)) {
 				$wc_box_one_title = esc_html__("Our Location", "eyecare");
 			}
-			
-			if(empty($wc_box_one_detail)) { 
+
+			if(empty($wc_box_one_detail)) {
 				$wc_box_one_detail = esc_html__("6th Avenue, NeHoland", "eyecare");
 			}
-			
+
 			//Second Box Default values
-			if(empty($wc_box_two_icon)) { 
+			if(empty($wc_box_two_icon)) {
 				$wc_box_two_icon = "fa-phone";
 			}
-			
-			if(empty($wc_box_two_title)) { 
+
+			if(empty($wc_box_two_title)) {
 				$wc_box_two_title = esc_html__("Call Us", "eyecare");
 			}
-			
-			if(empty($wc_box_two_detail)) { 
+
+			if(empty($wc_box_two_detail)) {
 				$wc_box_two_detail = esc_html__("+123-123-1234", "eyecare");
 			}
 		?>
-        
-                	
+
+
             <div class="large-4 medium-6 small-12 columns large-offset-5">
                 <div class="icon-box">
                     <div class="icon-side float-left">
@@ -68,7 +83,7 @@
                     <div class="clearfix"></div>
                 </div><!-- icon-box /-->
             </div><!-- Column Ends /-->
-                    
+
             <div class="large-4 medium-6 small-12 columns small-box">
                 <div class="icon-box">
                     <div class="icon-side float-left">
@@ -82,13 +97,13 @@
                     <div class="clearfix"></div>
                 </div><!-- icon-box /-->
             </div><!-- Column Ends /-->
-                    
+
         </div><!-- Right side /-->
     </div><!-- Row Ends /-->
 </div>
 <!-- Header Ends /-->
-        
-        
+
+
 <!-- Navigation Wrapper -->
 <div class="navigation">
     <div class="row nav-wrap">
@@ -99,7 +114,7 @@
                     <a data-toggle><span class="menu-icon dark float-left"></span></a>
                 </span>
             </div>
-          
+
             <?php
 				if(has_nav_menu('main_navigation')):
 					//Calling Main Navigation
@@ -115,7 +130,7 @@
 								'walker' 		  => new Wc_Walker_Nav_Menu()
 							);
 					wp_nav_menu($args);
-			else : 
+			else :
 				echo "<a href='".esc_url( home_url( '/wp-admin/nav-menus.php?action=locations' ) )."'>";
 					esc_html_e('Add Menu going Appearance >> Menus', 'eyecare');
 				echo "</a>";
@@ -123,20 +138,20 @@
 			?>
         </div><!-- top-bar Ends -->
         <!-- Navigation Code Ends here -->
-        
+
             <?php
                 $header_appointment_btn = get_theme_mod("wc_header_appointment_disable");
                 $header_btn_text		= get_theme_mod("wc_header_type_appointment_text");
                 $header_shortcode		= get_theme_mod("wc_header_type_form_shortcode");
-                
-				if(empty($header_btn_text)) { 
+
+				if(empty($header_btn_text)) {
 					$header_btn_text = esc_html__("Book Appointment", "eyecare");
 				}
-			
+
 				if(!empty($header_appointment_btn) || class_exists( 'WooCommerce')):
-			
+
 				$extra_classes = "";
-				
+
 				if(!empty($header_appointment_btn) && class_exists( 'WooCommerce')) {
 					$extra_classes = "cartbtn apntbtn";
 				} else if(!empty($header_appointment_btn)) {
@@ -151,7 +166,7 @@
 						<i class="fa fa-shopping-cart"></i>
 					</a>
 				<?php endif; ?>
-               
+
                	<?php if(!empty($header_appointment_btn)): ?>
 					<a data-open="header_appointment_modal" class="button secondary" aria-controls="header_appointment_modal" aria-haspopup="true" tabindex="0"><i class="fa fa-paper-plane" aria-hidden="true"></i> <?php echo esc_html($header_btn_text); ?></a>
                 <?php endif; ?>
@@ -159,7 +174,7 @@
 		   <?php
 				endif;
 		   ?>
-        
+
     </div><!-- right Ends /-->
 </div>
 <!-- Navigation Wrapper Ends /-->
@@ -168,28 +183,28 @@
 <div class="reveal" id="ourShoppingCart" data-reveal>
 	<button class="close-button" data-close aria-label="Close modal" type="button">
 		<span aria-hidden="true">&times;</span>
-	</button>                     
+	</button>
 	<!-- Hidden Menus -->
 	<div class="cart-table">
 		<h5><?php esc_html_e("Your Cart Details", "eyecare"); ?></h5>
-		<?php 
-			the_widget('WC_Widget_Cart'); 
+		<?php
+			the_widget('WC_Widget_Cart');
 		?>
 		<div class="clearfix"></div>
 	</div><!-- Cart Table /-->
 </div><!-- Right Side /-->
 <?php endif; ?>
 
-<?php 
+<?php
 	if(!empty($header_appointment_btn)):
-?>	
+?>
 <div class="reveal" id="header_appointment_modal" data-reveal>
 	<?php
-        if(empty($header_shortcode)) { 
+        if(empty($header_shortcode)) {
             esc_html_e("Go to Appearance >> Customize >> Header to add shortcode for form.", "eyecare");
-        } else { 
+        } else {
             echo do_shortcode($header_shortcode);
         }
-    ?>	
+    ?>
 </div><!-- Modal Ends /-->
 <?php endif; ?>
