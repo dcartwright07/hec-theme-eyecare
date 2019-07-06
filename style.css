@@ -15,14 +15,23 @@
 /* ====================
  * Header CSS Changes
  * ==================== */
- .header .icon-box .icon-side {
+.header .icon-box .icon-side {
 	border-color: #579483 !important;
 	color: #579483 !important;
 }
+#top {
+	background-color: #579483 !important;
+}
+#top:hover {
+	background-color: #201d1e !important;
+}
+.large-3 {
+	width: 33% !important;
+}
 
 /* ====================
-* Footer CSS Changes
-* ==================== */
+ * Footer CSS Changes
+ * ==================== */
 .footer-icon-box .icon-side {
 	color: #8CD5EC;
 }
