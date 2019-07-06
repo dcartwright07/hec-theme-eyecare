@@ -20,7 +20,7 @@
 							<h1 class="site-title">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 									<?php
-										the_custom_logo();
+										echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' );
 										bloginfo( 'name' );
 									?>
 								</a>
