@@ -50,6 +50,9 @@ a:hover .custom-logo small {
 .header-icon-container {
 	line-height: 80px;
 }
+.header .icon-box .info-side p {
+	line-height: 20px;
+}
 .icon-box {
 	padding-top: 20px;
 }
