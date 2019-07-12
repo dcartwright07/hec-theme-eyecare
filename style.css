@@ -56,6 +56,9 @@
 .doctor, .doctor .doctor-meta, .special-staff .doctor-links {
 	border: none;
 }
+.doctor img {
+	border-radius: 115px;
+}
 .kc-css-439768 .row {
 	max-width: 100%;
 }
