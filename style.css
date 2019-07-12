@@ -59,6 +59,9 @@
 .doctor img {
 	border-radius: 115px;
 }
+.doctor .button {
+	margin: 0 0 2rem;
+}
 .kc-css-439768 .row {
 	max-width: 100%;
 }
