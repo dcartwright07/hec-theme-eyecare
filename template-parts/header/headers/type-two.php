@@ -23,8 +23,10 @@
 										<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' ); ?>
 									</div>
 									<div class="small-8 columns">
-										<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-										<small><?php bloginfo( 'description' ); ?></small>
+										<h1 class="site-title">
+											<?php bloginfo( 'name' ); ?><br />
+											<small><?php bloginfo( 'description' ); ?></small>
+										</h1>
 									</div>
 								</div>
 							</a>
