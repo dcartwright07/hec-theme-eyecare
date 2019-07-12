@@ -16,8 +16,8 @@
  * Header CSS Changes
  * ==================== */
 .header .icon-box .icon-side {
-	border-color: #15568e;
-	color: #15568e;
+	border-color: #15568e !important;
+	color: #15568e !important;
 }
 .large-3 {
 	width: 33% !important;
