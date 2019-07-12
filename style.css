@@ -69,6 +69,9 @@
 figure {
 	margin: 0;
 }
+a:hover {
+	color: #42bce2;
+}
 
 /* ====================
  * Footer CSS Changes
