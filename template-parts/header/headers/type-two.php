@@ -2,7 +2,7 @@
 <div class="header header-new header-type-two">
     <div class="row">
 
-        <div class="large-4 medium-12 small-12 columns">
+        <div class="large-6 medium-12 small-12 columns">
 					<div class="logo">
 
 						<?php if( !has_custom_logo() ) : ?>
@@ -17,21 +17,24 @@
 						<?php else : ?>
 
 							<!-- Print custom logo and site title -->
-							<h1 class="site-title">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-									<?php
-										echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' );
-										bloginfo( 'name' );
-									?>
-								</a>
-							</h1>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<div class="row custom-logo">
+									<div class="small-4 columns">
+										<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' ); ?>
+									</div>
+									<div class="small-8 columns">
+										<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+										<small><?php bloginfo( 'description' ); ?></small>
+									</div>
+								</div>
+							</a>
 
 						<?php endif; ?>
 
 					</div><!-- logo /-->
         </div><!-- left Ends /-->
 
-        <div class="large-8 medium-12 small-12 columns">
+        <div class="large-6 medium-12 small-12 columns header-icon-container">
         <?php
 			$wc_box_one_icon 	= get_theme_mod("wc_header_type_icon_class_one");
 			$wc_box_one_title 	= get_theme_mod("wc_header_type_title_one");
@@ -70,7 +73,7 @@
 		?>
 
 
-            <div class="large-4 medium-6 small-12 columns large-offset-5">
+            <div class="medium-6 small-12 columns large-offset-1">
                 <div class="icon-box">
                     <div class="icon-side float-left">
                         <i class="fa <?php echo esc_attr($wc_box_one_icon); ?>" aria-hidden="true"></i>
@@ -84,7 +87,7 @@
                 </div><!-- icon-box /-->
             </div><!-- Column Ends /-->
 
-            <div class="large-4 medium-6 small-12 columns small-box">
+            <div class="medium-5 small-12 columns">
                 <div class="icon-box">
                     <div class="icon-side float-left">
                         <i class="fa <?php echo esc_attr($wc_box_two_icon); ?>" aria-hidden="true"></i>
