@@ -38,7 +38,7 @@
                 <?php the_post_thumbnail('wc-doctor-thumbnail'); ?>
                     </a>
                 <?php } ?>
-                <a href="<?php echo esc_url(get_the_permalink()); ?>" class="button primary">
+                <a href="<?php echo esc_url(get_the_permalink()); ?>" class="button">
                     <?php esc_html_e("Visit Profile", "eyecare"); ?>
                 </a>
             </div><!-- Doctor thumb /-->
