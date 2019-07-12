@@ -56,6 +56,19 @@ a:hover .custom-logo small {
 .icon-box {
 	padding-top: 20px;
 }
+/* ====================
+ * Body CSS Changes
+ * ==================== */
+.doctor, .doctor .doctor-meta {
+	border: none;
+}
+.kc-css-439768 .row {
+	max-width: 100%;
+}
+.kc-css-439768 .kc-css-126489 {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 /* ====================
  * Footer CSS Changes
