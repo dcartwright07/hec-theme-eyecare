@@ -10,7 +10,7 @@
 		<div class="row our-staff-page">
 			<?php
 
-				get_template_part('template-parts/post-type/group-optometrist');
+				get_template_part( 'template-parts/post-type/group-optometrist' );
 
 			?>
 		</div><!-- Row Ends /-->

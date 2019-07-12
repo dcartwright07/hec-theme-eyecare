@@ -11,7 +11,7 @@ if( have_posts() ) : while( have_posts() ) : the_post();
 
 	$counter++;
 
-	if($counter % 2 == 0) {
+	if( $counter % 2 == 0 ) {
 		//Even Posts
 		$float_class = "float-left";
 		$item_class = "item-two";
@@ -26,11 +26,12 @@ if( have_posts() ) : while( have_posts() ) : the_post();
 	$wc_doctor_googleplus 	= get_post_meta($post->ID, 'wc_doctor_googleplus', true);
 	$wc_doctor_linkedin 	= get_post_meta($post->ID, 'wc_doctor_linkedin', true);
 	$wc_doctor_slogan 		= get_post_meta($post->ID, 'wc_doctor_slogan', true);
+
 ?>
 
 	<div class="doctor-column medium-6 small-12 columns">
 		<div class="doctor">
-			<div class="doctor-thumb <?php echo esc_attr($float_class); ?>">
+			<div class="doctor-thumb <?php echo esc_attr( $float_class ); ?>">
 				<?php if( has_post_thumbnail() ) : ?>
 					<a href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail( 'wc-doctor-thumbnail' ); ?>
@@ -53,22 +54,22 @@ if( have_posts() ) : while( have_posts() ) : the_post();
 					?>
 				</h4>
 				<h3><a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php the_title(); ?></a></h3>
-				<p><?php echo esc_html( wc_custom_excerpt_length(220) ); ?></p>
+				<p><?php echo esc_html( wc_custom_excerpt_length( 220 ) ); ?></p>
 				<div class="doctor-links">
 					<ul class="menu">
 						<?php
 
-							if( !empty($wc_doctor_facebook) ) {
-								echo '<li><a href="'.esc_url($wc_doctor_facebook).'"><i class="fa fa-facebook"></i></a></li>';
+							if( !empty( $wc_doctor_facebook ) ) {
+								echo '<li><a href="' . esc_url( $wc_doctor_facebook ) . '"><i class="fa fa-facebook"></i></a></li>';
 							}
-							if( !empty($wc_doctor_twitter) ) {
-								echo '<li><a href="'.esc_url($wc_doctor_twitter).'"><i class="fa fa-twitter"></i></a></li>';
+							if( !empty( $wc_doctor_twitter ) ) {
+								echo '<li><a href="' . esc_url( $wc_doctor_twitter ) . '"><i class="fa fa-twitter"></i></a></li>';
 							}
-							if( !empty($wc_doctor_googleplus) ) {
-								echo '<li><a href="'.esc_url($wc_doctor_googleplus).'"><i class="fa fa-google-plus"></i></a></li>';
+							if( !empty( $wc_doctor_googleplus ) ) {
+								echo '<li><a href="' . esc_url( $wc_doctor_googleplus ) . '"><i class="fa fa-google-plus"></i></a></li>';
 							}
-							if( !empty($wc_doctor_linkedin) ) {
-								echo '<li><a href="'.esc_url($wc_doctor_linkedin).'"><i class="fa fa-linkedin"></i></a></li>';
+							if( !empty( $wc_doctor_linkedin ) ) {
+								echo '<li><a href="' . esc_url( $wc_doctor_linkedin ) . '"><i class="fa fa-linkedin"></i></a></li>';
 							}
 						?>
 					</ul>
@@ -85,7 +86,7 @@ if( have_posts() ) : while( have_posts() ) : the_post();
 wc_pagination(); //calling pagination
 else:
 	echo "<p>";
-	esc_html_e("Sorry but could not find anything related to your criteria.", "eyecare");
+	esc_html_e( "Sorry but could not find anything related to your criteria.", "eyecare" );
 	echo "</p>";
 endif;
 
