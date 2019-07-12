@@ -17,7 +17,7 @@
 						<?php else : ?>
 
 							<!-- Print custom logo and site title -->
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<div class="row custom-logo">
 									<div class="small-4 columns">
 										<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' ); ?>

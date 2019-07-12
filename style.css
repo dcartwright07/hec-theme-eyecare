@@ -35,7 +35,7 @@
 .custom-logo .small-8.columns {
 	padding-left: 0;
 }
-a:hover .custom-logo small {
+.logo-link {
 	color: #5d5d5d;
 }
 .header .logo img {
