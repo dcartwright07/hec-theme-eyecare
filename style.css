@@ -66,6 +66,12 @@
 	padding-left: 0;
 	padding-right: 0;
 }
+.button.secondary {
+	background-color: #2199e8;
+}
+.button:hover.secondary {
+	background-color: #1583cc;
+}
 figure {
 	margin: 0;
 }
