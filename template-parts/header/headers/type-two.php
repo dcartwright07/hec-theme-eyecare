@@ -75,14 +75,14 @@
 		?>
 
 
-            <div class="medium-6 small-12 columns large-offset-1">
+            <div class="medium-5 small-12 columns large-offset-2">
                 <div class="icon-box">
                     <div class="icon-side float-left">
                         <i class="fa <?php echo esc_attr($wc_box_one_icon); ?>" aria-hidden="true"></i>
                     </div><!-- icon side /-->
                     <div class="info-side float-left">
                         <p><?php echo esc_html($wc_box_one_title); ?><br>
-                            <strong><?php echo esc_html($wc_box_one_detail); ?></strong>
+                        <strong><?php echo esc_html($wc_box_one_detail); ?></strong>
                         </p>
                     </div><!-- info side /-->
                     <div class="clearfix"></div>
