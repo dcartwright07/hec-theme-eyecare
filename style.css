@@ -94,6 +94,16 @@ a:hover {
 .kc-feature-boxes {
 	height: 430px;
 }
+.service-thumb {
+	max-height: 146px;
+	overflow: hidden;
+	border: solid 1px #CCC;
+	margin-bottom: 15px;
+}
+.service-thumb img {
+	border: none;
+	border-radius: 0;
+}
 
 /* ====================
  * Footer CSS Changes
