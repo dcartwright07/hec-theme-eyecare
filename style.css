@@ -117,3 +117,17 @@ a:hover {
 .footer-icon-box .icon-side {
 	color: #8CD5EC;
 }
+.footer-icon-box .info-side {
+	padding: 19px 0 19px 15px;
+}
+.footer-icon-box .info-side p {
+	font-weight: bold;
+	margin-bottom: 0;
+	font-size: 15px;
+}
+@media screen and (max-width: 1155px) and (min-width: 1025px) {
+	.large-4 {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
