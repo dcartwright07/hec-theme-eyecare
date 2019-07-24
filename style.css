@@ -111,7 +111,8 @@ a:hover {
 	line-height: 200px;
 }
 .blue-hr {
-	border-top: 1px solid #15568E;
+	border-top: 2px solid #42bce2;
+	margin-top: -10px;
 }
 
 /* ====================
