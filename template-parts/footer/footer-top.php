@@ -50,10 +50,10 @@
 	 } else if(!empty($wc_default_ft_q)) {
 	 	$widgets = $wc_default_ft_q;
 	 } else {
-	 	$widgets = "four-widgets";
+	 	$widgets = "one-widget";
 	 }
 
-	 if($widgets == 'four-widgets' || $widgets == '') {
+	 if($widgets == 'four-widgets') {
 		//Four Columns
 		$classes = 'large-3 medium-6 small-12 columns';
 	} else if($widgets == 'three-widgets') {
@@ -63,6 +63,7 @@
 		//2 Widgets
 		$classes = 'medium-6 small-12 columns';
 	} else {
+		//1 Widget
 		$classes = 'small-12 columns';
 	}
 ?>
