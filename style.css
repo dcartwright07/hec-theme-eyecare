@@ -78,8 +78,18 @@
 figure {
 	margin: 0;
 }
+figure.content-image {
+	max-height: 190px;
+	overflow: hidden;
+}
 a:hover {
 	color: #42bce2;
+}
+.content-desc {
+	height: 80px;
+}
+.kc-feature-boxes {
+	height: 430px;
 }
 
 /* ====================
