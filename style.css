@@ -88,6 +88,9 @@ a:hover {
 .content-desc {
 	height: 80px;
 }
+.content-title {
+	height: 30px;
+}
 .kc-feature-boxes {
 	height: 430px;
 }
