@@ -104,6 +104,9 @@ a:hover {
 	border: none;
 	border-radius: 0;
 }
+.service-info {
+	height: 200px;
+}
 
 /* ====================
  * Footer CSS Changes
