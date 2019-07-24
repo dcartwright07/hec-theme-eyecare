@@ -107,6 +107,9 @@ a:hover {
 .service-info {
 	height: 200px;
 }
+.payment-align-middle .kc_single_image {
+	line-height: 200px;
+}
 
 /* ====================
  * Footer CSS Changes
