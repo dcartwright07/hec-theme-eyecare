@@ -85,14 +85,14 @@ figure.content-image {
 a:hover {
 	color: #42bce2;
 }
-.content-desc {
-	height: 80px;
-}
 .content-title {
 	height: 30px;
 }
 .kc-feature-boxes {
 	height: 430px;
+}
+.kc-feature-boxes .content-desc {
+	height: 80px;
 }
 .service-thumb {
 	max-height: 146px;
