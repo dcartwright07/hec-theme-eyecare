@@ -110,6 +110,9 @@ a:hover {
 .payment-align-middle .kc_single_image {
 	line-height: 200px;
 }
+.blue-hr {
+	border-top: 1px solid #15568E;
+}
 
 /* ====================
  * Footer CSS Changes
