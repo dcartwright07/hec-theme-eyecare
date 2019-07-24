@@ -139,7 +139,6 @@ table.footer-table tbody tr:last-child {
 	border-bottom: none;
 }
 table.footer-table tbody tr:nth-child(even) {
-	border: 1px solid #ccc;
 	background: none;
 }
 @media screen and (max-width: 1155px) and (min-width: 1025px) {
