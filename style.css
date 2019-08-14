@@ -118,7 +118,7 @@ a:hover {
 /* ====================
  * Footer CSS Changes
  * ==================== */
-.footer-icon-box .icon-side {
+.footer-icon-box .icon-side, .footer h2, .footer a:hover {
 	color: #8CD5EC;
 }
 .footer-icon-box .info-side {
@@ -141,6 +141,13 @@ table.footer-table tbody tr:last-child {
 }
 table.footer-table tbody tr:nth-child(even) {
 	background: none;
+}
+table.footer-table tbody td {
+	text-align: left;
+}
+table.footer-table tbody td:nth-child(3) {
+	border-left: 1px solid #ccc;
+	padding-left: 20px;
 }
 @media screen and (max-width: 1155px) and (min-width: 1025px) {
 	.large-4 {
