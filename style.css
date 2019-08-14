@@ -139,7 +139,7 @@ h4, h4 a {
 	margin-bottom: 0;
 	font-size: 15px;
 }
-.footer::after {
+.footer::after, .title-section::after {
 	background: none;
 }
 table.footer-table tbody {
