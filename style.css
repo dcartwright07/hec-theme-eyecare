@@ -139,6 +139,9 @@ h4, h4 a {
 	margin-bottom: 0;
 	font-size: 15px;
 }
+.footer::after {
+	background: none;
+}
 table.footer-table tbody {
 	border: none;
 	background: none;
