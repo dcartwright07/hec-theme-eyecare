@@ -114,6 +114,16 @@ a:hover {
 	border-top: 2px solid #42bce2;
 	margin-top: -10px;
 }
+label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=text], [type=email], span {
+	font-size: 1rem;
+	line-height: 24px;
+}
+h3, h3 a {
+	font-size: 1.625rem;
+}
+h4, h4 a {
+	font-size: 1.375rem;
+}
 
 /* ====================
  * Footer CSS Changes
