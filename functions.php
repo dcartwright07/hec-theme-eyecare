@@ -24,4 +24,4 @@ function hec_facebook_javascript_sdk() {
 
 }
 
-add_action( 'wp_body_open', 'hec_facebook_javascript_sdk' );
+add_action( 'wc_after_body_start', 'hec_facebook_javascript_sdk' );
