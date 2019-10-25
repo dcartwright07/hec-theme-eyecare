@@ -13,6 +13,7 @@ function wc_child_scripts() {
 //High Priority Action
 add_action( 'wp_enqueue_scripts', 'wc_child_scripts', 99 );
 
+// Add Facebook Javascript SDK right after the opening of the body tag for Facebook feed.
 function hec_facebook_javascript_sdk() {
 
 	?>
