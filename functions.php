@@ -24,5 +24,4 @@ function hec_facebook_javascript_sdk() {
 	<?php
 
 }
-
 add_action( 'wc_after_body_start', 'hec_facebook_javascript_sdk' );
