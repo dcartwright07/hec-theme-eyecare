@@ -6,8 +6,8 @@
 	 */
 ?>
 
-    <?php if(have_posts()) : while(have_posts()): the_post(); ?> 
-    
+    <?php if(have_posts()) : while(have_posts()): the_post(); ?>
+
     <div class="medium-4 small-12 columns service">
         <div class="serivce-block">
             <div class="service-thumb">
@@ -15,26 +15,28 @@
                     <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail('wc-service-small-thumb'); ?>
                     </a>
-                <?php } ?>    
+                <?php } ?>
             </div><!-- Service Thumb /-->
             <div class="service-info">
-                <h4><a href="<?php echo esc_url(get_the_permalink()); ?>"><?php the_title(); ?></a></h4>
+                <h4><?php the_title(); ?></h4>
                 <p>
-				<?php echo wc_custom_excerpt_length(150); ?>
-                <a href="<?php echo esc_url(get_the_permalink()); ?>"><?php esc_html_e("Read More", "eyecare"); ?> &raquo;</a>
+								<?php
+									// echo wc_custom_excerpt_length(150);
+									the_content();
+								?>
                 </p>
             </div><!-- Service Info /-->
         </div><!-- Service /-->
     </div><!-- Service Blog column /-->
-    
-    
+
+
     <?php endwhile; ?>
 	<div class="clearfix"></div>
-    <?php	
+    <?php
 			wc_pagination(); //calling pagination
-		else: 
+		else:
 			echo "<p>";
 				esc_html_e("Sorry but could not find anything related to your criteria.", "eyecare");
 			echo "</p>";
-	 	endif; 
+	 	endif;
 	 ?>
