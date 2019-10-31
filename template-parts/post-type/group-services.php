@@ -6,14 +6,14 @@
 	 */
 ?>
 
-    <?php if(have_posts()) : while(have_posts()): the_post(); ?>
+    <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
     <div class="medium-4 small-12 columns service">
         <div class="serivce-block">
             <div class="service-thumb">
-                <?php if ( has_post_thumbnail() ) { ?>
+                <?php if( has_post_thumbnail() ) { ?>
                     <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('wc-service-small-thumb'); ?>
+                <?php the_post_thumbnail( 'wc-service-small-thumb' ); ?>
                     </a>
                 <?php } ?>
             </div><!-- Service Thumb /-->
@@ -36,7 +36,7 @@
 			wc_pagination(); //calling pagination
 		else:
 			echo "<p>";
-				esc_html_e("Sorry but could not find anything related to your criteria.", "eyecare");
+				esc_html_e( "Sorry but could not find anything related to your criteria.", "eyecare" );
 			echo "</p>";
 	 	endif;
 	 ?>
