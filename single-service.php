@@ -27,8 +27,6 @@
     <!-- Content section -->
     <div class="content-area single-service module <?php esc_attr_e($sidebar_position_class); ?>">
         <div class="row">
-
-				<p>Testing this code.</p>
         	<?php
 				//Getting posts sides
 				get_template_part('template-parts/post-type/single-service');
