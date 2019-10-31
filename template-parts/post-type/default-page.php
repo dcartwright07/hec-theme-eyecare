@@ -28,8 +28,6 @@
 <div class="<?php echo esc_attr( $wc_columns_quantity ); ?> posts-wrap">
 	<div class="posts-container row">
 
-		bar_dump();
-
     <?php if( have_posts() ) : while( have_posts() ): the_post(); bar_dump(); ?>
 
     <div class="medium-12 small-12 columns">
