@@ -133,6 +133,7 @@
 				'field'			=> 'slug',
 				'terms'			=> esc_attr( $wc_ourservices_display_group )
 			);
+			echo 'Yes!';
 		}
 
 		//Number of Columns to Display
