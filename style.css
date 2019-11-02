@@ -94,6 +94,10 @@ a:hover {
 .kc-feature-boxes .content-desc {
 	height: 80px;
 }
+.kc-feature-boxes figure.content-image {
+	max-height: 190px;
+	overflow: hidden;
+}
 .service-thumb {
 	max-height: 146px;
 	overflow: hidden;
