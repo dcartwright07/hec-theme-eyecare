@@ -107,6 +107,11 @@ a:hover {
 .service-info {
 	height: 200px;
 }
+.service-info h4 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.25rem;
+}
 .payment-align-middle .kc_single_image {
 	line-height: 200px;
 }
