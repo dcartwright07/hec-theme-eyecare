@@ -133,6 +133,9 @@ label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=tex
 	font-size: 1.125rem;
 	line-height: 28px;
 }
+h2, h2 a {
+	margin-top: 40px;
+}
 h3, h3 a {
 	font-size: 1.625rem;
 }
