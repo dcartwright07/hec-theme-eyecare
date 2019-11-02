@@ -28,8 +28,6 @@
 
 <body <?php body_class(); ?>>
 
-	<h2>This is to test this code.</h2>
-
 	<?php
 		/*
 		 * Hooks Page Preloader.
