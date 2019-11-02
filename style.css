@@ -112,6 +112,9 @@ a:hover {
 	text-align: center;
 	font-size: 1.25rem;
 }
+.serivce-block {
+	border: 1px solid #eee;
+}
 .payment-align-middle .kc_single_image {
 	line-height: 200px;
 }
