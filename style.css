@@ -78,10 +78,6 @@
 figure {
 	margin: 0;
 }
-figure.content-image {
-	max-height: 190px;
-	overflow: hidden;
-}
 a:hover {
 	color: #42bce2;
 }
