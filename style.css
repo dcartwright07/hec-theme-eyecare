@@ -112,6 +112,9 @@ a:hover {
 	text-align: center;
 	font-size: 1.25rem;
 }
+.service-info p {
+	font-size: 0.875rem;
+}
 .service-info .content-button a {
 	background: #999;
 	color: #fff;
