@@ -147,6 +147,9 @@ h3, h3 a {
 h4, h4 a {
 	font-size: 1.375rem;
 }
+.widget h2 {
+	margin-top: 0;
+}
 
 /* ====================
  * Footer CSS Changes
