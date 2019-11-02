@@ -112,6 +112,13 @@ a:hover {
 	text-align: center;
 	font-size: 1.25rem;
 }
+.service-info .content-button a {
+	background: #666;
+	color: #fff;
+}
+.service-info .content-button a:hover {
+	background: #42bce2;
+}
 .serivce-block {
 	border: 1px solid #eee;
 }
