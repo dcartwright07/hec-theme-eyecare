@@ -135,6 +135,7 @@ label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=tex
 }
 h2, h2 a {
 	margin-top: 40px;
+	font-weight: bold;
 }
 h3, h3 a {
 	font-size: 1.625rem;
@@ -146,11 +147,15 @@ h4, h4 a {
 /* ====================
  * Footer CSS Changes
  * ==================== */
+
 .footer-icon-box .icon-side, .footer h2, .footer a:hover {
 	color: #8CD5EC;
 }
 .footer-icon-box .info-side {
 	padding: 19px 0 19px 15px;
+}
+.footer-icon-box .info-side h2 {
+	margin-top: 0;
 }
 .footer-icon-box .info-side p {
 	font-weight: bold;
@@ -179,6 +184,9 @@ table.footer-table tbody td {
 table.footer-table tbody td:nth-child(3) {
 	border-left: 1px solid #ccc;
 	padding-left: 20px;
+}
+.copyrightinfo a {
+	font-size: 1rem;
 }
 @media screen and (max-width: 1155px) and (min-width: 1025px) {
 	.large-4 {
