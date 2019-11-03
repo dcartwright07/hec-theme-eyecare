@@ -50,6 +50,9 @@
 .icon-box {
 	padding-top: 20px;
 }
+.title-section::after {
+	background-position: center;
+}
 /* ====================
  * Body CSS Changes
  * ==================== */
