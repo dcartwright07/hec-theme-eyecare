@@ -175,7 +175,7 @@ h4, h4 a {
 	font-size: 15px;
 }
 .footer::after, .title-section::after {
-	background: none;
+	background-image: none;
 }
 table.footer-table tbody {
 	border: none;
