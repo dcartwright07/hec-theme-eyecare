@@ -223,15 +223,6 @@ table.footer-table tbody td:nth-child(3) {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.kc-feature-boxes {
-		height: 380px;
-	}
-	.content-title {
-		margin-bottom: 0;
-	}
-	.kc-feature-boxes .content-desc {
-		height: 40px;
-	}
 }
 @media screen and (max-width: 64em) {
 	.doctor img {
@@ -243,6 +234,12 @@ table.footer-table tbody td:nth-child(3) {
 	}
 	.kc-feature-boxes {
 		height: 200px;
+	}
+	.kc-feature-boxes .content-desc {
+		height: 40px;
+	}
+	.kc-fb-layout-4 .content-title {
+		margin: 0;
 	}
 }
 @media screen and (min-width: 40em) and (max-width: 64em) {
