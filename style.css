@@ -19,9 +19,6 @@
 	border-color: #42bce2 !important;
 	color: #42bce2 !important;
 }
-.large-3 {
-	width: 33% !important;
-}
 .custom-logo h1 {
 	margin-bottom: 0;
 	margin-top: 12px;
@@ -202,7 +199,6 @@ table.footer-table tbody td:nth-child(3) {
 }
 @media screen and (max-width: 1155px) and (min-width: 1025px) {
 	.large-4 {
-		width: 100%;
 		margin-bottom: 15px;
 	}
 }
@@ -211,5 +207,17 @@ table.footer-table tbody td:nth-child(3) {
  * Mobile CSS Changes
  * ==================== */
 @media only screen and (max-width: 40em) {
-
+	.header {
+		padding-bottom: 10px;
+	}
+	.top-bar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.top-bar nav {
+		margin-top: 20px;
+	}
+	.module {
+		margin-bottom: 50px;
+	}
 }
