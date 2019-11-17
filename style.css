@@ -81,19 +81,6 @@ figure {
 a:hover {
 	color: #42bce2;
 }
-.content-title {
-	height: 30px;
-}
-.kc-feature-boxes {
-	height: 430px;
-}
-.kc-feature-boxes .content-desc {
-	height: 80px;
-}
-.kc-feature-boxes figure.content-image {
-	max-height: 190px;
-	overflow: hidden;
-}
 .service-thumb {
 	max-height: 146px;
 	overflow: hidden;
@@ -233,6 +220,18 @@ table.footer-table tbody td:nth-child(3) {
 		margin-bottom: 50px;
 	}
 }
-@media screen and (min-width: 40em) and (max-width: 64em) {
-
+@media screen and (min-width: 64em) {
+	.content-title {
+		height: 30px;
+	}
+	.kc-feature-boxes {
+		height: 430px;
+	}
+	.kc-feature-boxes .content-desc {
+		height: 80px;
+	}
+	.kc-feature-boxes figure.content-image {
+		max-height: 190px;
+		overflow: hidden;
+	}
 }
