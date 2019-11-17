@@ -29,7 +29,7 @@ if( have_posts() ) : while( have_posts() ) : the_post();
 
 ?>
 
-	<div class="doctor-column large-4 medium-6 small-12 columns">
+	<div class="doctor-column medium-6 small-12 columns">
 		<div class="doctor">
 			<div class="doctor-thumb <?php echo esc_attr( $float_class ); ?>">
 				<?php if( has_post_thumbnail() ) : ?>
