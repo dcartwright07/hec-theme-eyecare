@@ -215,6 +215,17 @@ table.footer-table tbody td:nth-child(3) {
 	.module {
 		margin-bottom: 50px;
 	}
+	table tbody td {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	table.footer-table tbody td:nth-child(3) {
+		padding-left: 6px;
+	}
+	.footerTop {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 @media screen and (max-width: 64em) {
 	.doctor img {
