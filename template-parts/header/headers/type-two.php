@@ -19,10 +19,10 @@
 							<!-- Print custom logo and site title -->
 							<a class="logo-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 								<div class="row custom-logo">
-									<div class="small-4 columns">
+									<div class="medium-4 columns">
 										<?php echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' ); ?>
 									</div>
-									<div class="small-8 columns">
+									<div class="medium-8 columns">
 										<h1 class="site-title">
 											<?php bloginfo( 'name' ); ?><br />
 											<small><?php bloginfo( 'description' ); ?></small>
@@ -75,7 +75,7 @@
 		?>
 
 
-            <div class="medium-5 small-12 columns large-offset-2">
+            <div class="medium-5 small-12 columns large-offset-2 hide-for-small">
                 <div class="icon-box">
                     <div class="icon-side float-left">
                         <i class="fa <?php echo esc_attr($wc_box_one_icon); ?>" aria-hidden="true"></i>
@@ -89,7 +89,7 @@
                 </div><!-- icon-box /-->
             </div><!-- Column Ends /-->
 
-            <div class="medium-5 small-12 columns">
+            <div class="medium-5 small-12 columns hide-for-small">
                 <div class="icon-box">
                     <div class="icon-side float-left">
                         <i class="fa <?php echo esc_attr($wc_box_two_icon); ?>" aria-hidden="true"></i>

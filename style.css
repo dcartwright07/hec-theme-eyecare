@@ -206,3 +206,12 @@ table.footer-table tbody td:nth-child(3) {
 		margin-bottom: 15px;
 	}
 }
+
+/* ====================
+ * Mobile CSS Changes
+ * ==================== */
+@media only screen and (max-width: 40em) {
+	.header .logo img {
+		height: inherit;
+	}
+}
