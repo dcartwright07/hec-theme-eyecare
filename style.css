@@ -223,12 +223,6 @@ table.footer-table tbody td:nth-child(3) {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.content-title {
-		height: 30px;
-	}
-	.kc-feature-boxes .content-desc {
-		height: 70px;
-	}
 }
 @media screen and (max-width: 64em) {
 	.doctor img {
@@ -237,12 +231,6 @@ table.footer-table tbody td:nth-child(3) {
 	}
 	.module {
 		margin-bottom: 50px;
-	}
-	.kc-feature-boxes {
-		height: 200px;
-	}
-	.kc-feature-boxes .content-desc {
-		height: 40px;
 	}
 }
 @media screen and (min-width: 40em) and (max-width: 64em) {
