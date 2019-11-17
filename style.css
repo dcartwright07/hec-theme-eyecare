@@ -241,9 +241,10 @@ table.footer-table tbody td:nth-child(3) {
 	.module {
 		margin-bottom: 50px;
 	}
-}
-@media screen and (min-width: 40em) and (max-width: 64em) {
 	.kc-feature-boxes {
 		height: 200px;
 	}
+}
+@media screen and (min-width: 40em) and (max-width: 64em) {
+
 }
