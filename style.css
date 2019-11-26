@@ -92,7 +92,8 @@ a:hover {
 	border-radius: 0;
 }
 .service-info {
-	height: 200px;
+	height: 230px;
+	position: relative;
 }
 .service-info h4 {
 	font-weight: bold;
@@ -107,6 +108,12 @@ a:hover {
 }
 .serivce-block ul, .serivce-block a {
 	line-height: 20px;
+}
+.service-info .content-button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -55px;
 }
 .service-info .content-button a {
 	background: #999;
