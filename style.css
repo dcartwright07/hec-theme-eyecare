@@ -99,8 +99,11 @@ a:hover {
 	text-align: center;
 	font-size: 1.25rem;
 }
-.service-info p {
+.service-info p, .serivce-block ul, .serivce-block a {
 	font-size: 0.875rem;
+}
+.serivce-block ul {
+	text-align: left;
 }
 .service-info .content-button a {
 	background: #999;
