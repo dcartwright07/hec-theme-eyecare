@@ -105,6 +105,9 @@ a:hover {
 .serivce-block ul {
 	text-align: left;
 }
+.serivce-block ul, .serivce-block a {
+	line-height: 20px;
+}
 .service-info .content-button a {
 	background: #999;
 	color: #fff;
