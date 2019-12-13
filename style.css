@@ -99,9 +99,11 @@ a:hover {
 .home-services .service-thumb { max-height: 135px; border: none; }
 .home-services .service-info { padding: 0 20px 20px; height: 260px; }
 .home-services .service-info .content-button { padding-bottom: 20px; }
+@media only screen and (max-width: 64em) {
+	.home-services .service-thumb { max-height: 100%; }
+}
 @media only screen and (max-width: 40em) {
 	.home-services .service-info { padding-bottom: 70px; height: inherit; }
-	.home-services .service-thumb { max-height: 100%; }
 }
 /* #endregion */
 
