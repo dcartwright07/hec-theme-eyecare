@@ -208,6 +208,18 @@ table.footer-table tbody td:nth-child(3) {
 	.single-doctor {
 		text-align: center;
 	}
+	.footer-icon-box .icon-side {
+		width: 60px;
+	}
+	.hours-item {
+		float: left;
+    width: 50%;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+	}
+	.hours-item-last {
+		border-bottom: none;
+	}
 }
 @media screen and (max-width: 64em) {
 	.doctor img {
