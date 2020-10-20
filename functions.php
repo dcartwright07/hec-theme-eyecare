@@ -8,6 +8,7 @@
 // Actions for functions
 add_action( 'wp_enqueue_scripts', 'hec_child_scripts', 99 ); //High Priority Action
 add_action( 'wc_after_body_start', 'hec_facebook_javascript_sdk' );
+add_filter( 'woocommerce_is_purchasable', '__return_false'); // Hide WooCommerce Cart Icon
 
 function hec_child_scripts() {
 
