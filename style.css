@@ -88,6 +88,9 @@ a:hover {
 	background-color: #42bce2;
 	color: #fff;
 }
+.top-bar .dropdown.menu > li.opens-right > .is-dropdown-submenu li a {
+	background-color: #42bce2;
+}
 
 /* #region Service Block */
 .service-info {
