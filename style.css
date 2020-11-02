@@ -53,7 +53,9 @@
 /* ====================
  * Body CSS Changes
  * ==================== */
-.doctor, .doctor .doctor-meta, .special-staff .doctor-links {
+.doctor,
+.doctor .doctor-meta,
+.special-staff .doctor-links {
 	border: none;
 }
 .doctor img {
@@ -81,29 +83,92 @@ figure {
 a:hover {
 	color: #42bce2;
 }
+.is-active a,
+.top-bar ul li a:hover {
+	background-color: #42bce2;
+	color: #fff;
+}
 
 /* #region Service Block */
-.service-info { height: 230px; position: relative; }
-.service-thumb { max-height: 146px; overflow: hidden; border: solid 1px #CCC; margin-bottom: 15px; }
-.service-thumb img { border: none; border-radius: 0; }
-.service-info h4 { font-weight: bold; text-align: center; font-size: 1.25rem; }
-.service-info p, .serivce-block ul, .serivce-block a { font-size: 0.875rem; }
-.serivce-block ul { text-align: left; }
-.serivce-block ul, .serivce-block a { line-height: 20px; }
-.service-info .content-button { position: absolute; bottom: 0; left: 50%; margin-left: -55px; }
-.service-info .content-button a { background: #999; color: #fff; }
-.service-info .content-button a:hover { background: #42bce2; }
-.serivce-block { border: 1px solid #eee; }
+.service-info {
+	height: 230px;
+	position: relative;
+}
+.service-thumb {
+	max-height: 146px;
+	overflow: hidden;
+	border: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+.service-thumb img {
+	border: none;
+	border-radius: 0;
+}
+.service-info h4 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.25rem;
+}
+.service-info p,
+.serivce-block ul,
+.serivce-block a {
+	font-size: 0.875rem;
+}
+.serivce-block ul {
+	text-align: left;
+}
+.serivce-block ul,
+.serivce-block a {
+	line-height: 20px;
+}
+.service-info .content-button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -55px;
+}
+.service-info .content-button a {
+	background: #999;
+	color: #fff;
+}
+.service-info .content-button a:hover {
+	background: #42bce2;
+}
+.serivce-block {
+	border: 1px solid #eee;
+}
 
-.home-services .serivce-block { padding: 0; }
-.home-services .service-thumb { max-height: 135px; border: none; }
-.home-services .service-info { padding: 0 20px 20px; height: 260px; }
-.home-services .service-info .content-button { padding-bottom: 20px; }
+.home-services .serivce-block {
+	padding: 0;
+}
+.home-services .service-thumb {
+	max-height: 135px;
+	border: none;
+}
+.home-services .service-info {
+	padding: 0 20px 20px;
+	height: 260px;
+}
+.home-services .service-info .content-button {
+	padding-bottom: 20px;
+}
 @media only screen and (max-width: 64em) {
-	.home-services .service-thumb { max-height: 100%; }
+	.home-services .service-thumb {
+		max-height: 100%;
+	}
 }
 @media only screen and (max-width: 40em) {
-	.home-services .service-info { padding-bottom: 70px; height: inherit; }
+	.home-services .service-info {
+		padding-bottom: 70px;
+		height: inherit;
+	}
+}
+/* #endregion */
+
+/* #region WP Easy Pay Overrides */
+.singlepage .form-wizard .focus-input .wizard-form-text-label,
+.singlepage .form-wizard .date-field .wizard-form-text-label {
+	top: -15px;
 }
 /* #endregion */
 
@@ -114,21 +179,36 @@ a:hover {
 	border-top: 2px solid #42bce2;
 	margin-top: -10px;
 }
-label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=text], [type=email], span {
+label,
+p,
+ul,
+ol,
+a,
+blockquote,
+input,
+textarea,
+select,
+[type="date"],
+[type="text"],
+[type="email"],
+span {
 	font-size: 1.125rem;
 	line-height: 28px;
 }
 table a {
 	font-size: 0.875rem;
 }
-h2, h2 a {
+h2,
+h2 a {
 	margin-top: 40px;
 	font-weight: bold;
 }
-h3, h3 a {
+h3,
+h3 a {
 	font-size: 1.625rem;
 }
-h4, h4 a {
+h4,
+h4 a {
 	font-size: 1.375rem;
 }
 .widget h2 {
@@ -139,8 +219,10 @@ h4, h4 a {
  * Footer CSS Changes
  * ==================== */
 
-.footer-icon-box .icon-side, .footer h2, .footer a:hover {
-	color: #8CD5EC;
+.footer-icon-box .icon-side,
+.footer h2,
+.footer a:hover {
+	color: #8cd5ec;
 }
 .footer-icon-box .info-side {
 	padding: 18px 0 15px 15px;
@@ -153,7 +235,8 @@ h4, h4 a {
 	margin-bottom: 0;
 	font-size: 15px;
 }
-.footer::after, .title-section::after {
+.footer::after,
+.title-section::after {
 	background-image: none;
 }
 table.footer-table tbody {
@@ -216,9 +299,9 @@ table.footer-table tbody td:nth-child(3) {
 	}
 	.hours-item {
 		float: left;
-    width: 50%;
-    padding: 5px 0;
-    border-bottom: 1px solid #fff;
+		width: 50%;
+		padding: 5px 0;
+		border-bottom: 1px solid #fff;
 	}
 	.hours-item-last {
 		border-bottom: none;
@@ -232,12 +315,24 @@ table.footer-table tbody td:nth-child(3) {
 	.module {
 		margin-bottom: 50px;
 	}
-	label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=text], [type=email], span {
+	label,
+	p,
+	ul,
+	ol,
+	a,
+	blockquote,
+	input,
+	textarea,
+	select,
+	[type="date"],
+	[type="text"],
+	[type="email"],
+	span {
 		font-size: 16px;
 		line-height: 24px;
 	}
 	.payment-align-middle .kc_single_image {
-    line-height: 100px;
+		line-height: 100px;
 	}
 }
 @media screen and (min-width: 64em) {
