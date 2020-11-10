@@ -218,10 +218,18 @@ h4 a {
 	margin-top: 0;
 }
 
+#top {
+	background-color: #42bce2;
+}
+
 /* ====================
  * Footer CSS Changes
  * ==================== */
-
+.footer-information-boxes .column,
+.footer-information-boxes .columns {
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
+}
 .footer-icon-box .icon-side,
 .footer h2,
 .footer a:hover {
@@ -241,6 +249,10 @@ h4 a {
 .footer::after,
 .title-section::after {
 	background-image: none;
+}
+.footerTop {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 table.footer-table tbody {
 	border: none;
@@ -289,10 +301,6 @@ table.footer-table tbody td:nth-child(3) {
 	}
 	table.footer-table tbody td:nth-child(3) {
 		padding-left: 6px;
-	}
-	.footerTop {
-		padding-top: 0;
-		padding-bottom: 0;
 	}
 	.single-doctor {
 		text-align: center;
